@@ -1,15 +1,19 @@
 set more off
 
-local f12 "VS12FetalDetailUSPub.txt"
-local d12 "fetl2012.dct"
+local base "/home/damiancclarke/database/NVSS/FetalDeaths"
 
-local dat_name "/home/damiancclarke/database/NVSS/FetalDeaths/raw/`f12'"
+local f2011 "VS11Fetal.DetailUSpubfinalupdate.DetailUSpub"
+local f2012 "VS12FetalDetailUSPub.txt"
 
-local dta_name "/home/damiancclarke/database/NVSS/FetalDeaths/dta/fetl2012"
+foreach year in 2011 2012 {
 
-local dct_name "/home/damiancclarke/database/NVSS/FetalDeaths/process/dicts/`d12'"
+	local dat_name "`base'/raw/`f`year''"
+	local dta_name "`base'/dta/fetl`year'"
+	local dct_name "`base'/process/dicts/fetl`year'.dct"
 
-infile using "`dct_name'", using("`dat_name'") clear
+	infile using "`dct_name'", using("`dat_name'") clear
 
-compress
-save "`dta_name'",replace
+	compress
+	save "`dta_name'",replace
+
+}
