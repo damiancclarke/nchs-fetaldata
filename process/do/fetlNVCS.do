@@ -2,6 +2,7 @@ set more off
 
 local base "/home/damiancclarke/database/NVSS/FetalDeaths"
 
+local f2004 "VS04FETL.DETUSPUB"
 local f2005 "vs05fetl.publicUS"
 local f2006 "vs06fetal.DETUSPUB"
 local f2007 "VS07Fetal.PublicUS"
@@ -11,7 +12,7 @@ local f2010 "VS10Fetalupdated.Detailuspub.Detailuspub"
 local f2011 "VS11Fetal.DetailUSpubfinalupdate.DetailUSpub"
 local f2012 "VS12FetalDetailUSPub.txt"
 
-foreach year in 2005 2006 2007 2008 2009 2010 2011 2012 {
+foreach year in 2004 2005 2006 2007 2008 2009 2010 2011 2012 {
 
 	local dat_name "`base'/raw/`f`year''"
 	local dta_name "`base'/dta/fetl`year'"
