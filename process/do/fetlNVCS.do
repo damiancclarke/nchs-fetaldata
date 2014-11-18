@@ -2,6 +2,7 @@ set more off
 
 local base "/home/damiancclarke/database/NVSS/FetalDeaths"
 
+local f2000 "VS00FETL.DETUSPUB"
 local f2001 "VS01FETL.DETUSPUB"
 local f2002 "VS02FETL.DETUSPUB"
 local f2003 "VS03FETL.DETUSPUB"
@@ -15,7 +16,7 @@ local f2010 "VS10Fetalupdated.Detailuspub.Detailuspub"
 local f2011 "VS11Fetal.DetailUSpubfinalupdate.DetailUSpub"
 local f2012 "VS12FetalDetailUSPub.txt"
 
-foreach year of numlist 2001(1)2012 {
+foreach year of numlist 2000(1)2012 {
 
 	local dat_name "`base'/raw/`f`year''"
 	local dta_name "`base'/dta/fetl`year'"
