@@ -2,6 +2,7 @@ set more off
 
 local base "/home/damiancclarke/database/NVSS/FetalDeaths"
 
+local f1997 "VS97FETL.DETUSPUB"
 local f1998 "VS98FETL.DETUSPUB"
 local f1999 "VS99FETL.DETUSPUB"
 local f2000 "VS00FETL.DETUSPUB"
