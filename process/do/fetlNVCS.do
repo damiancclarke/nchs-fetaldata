@@ -16,8 +16,9 @@ local f2009 "VS09Fetal.Detailuspub.txt"
 local f2010 "VS10Fetalupdated.Detailuspub.Detailuspub"
 local f2011 "VS11Fetal.DetailUSpubfinalupdate.DetailUSpub"
 local f2012 "VS12FetalDetailUSPub.txt"
+local f2012 "VS13FetalDetailUSPub.txt"
 
-foreach year of numlist 1988(1)2012 {
+foreach year of numlist 1988(1)2013 {
 
 	local dat_name "`base'/raw/`f`year''"
 	local dta_name "`base'/dta/fetl`year'"
